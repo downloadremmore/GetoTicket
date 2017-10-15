@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradian_purple"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.example.rim.Geto_Ticket.UI.CustomFontTextView
+            android:id="@+id/tuto_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:text="@string/tuto2_text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17.5dp"
+            app:font="@string/font_name_custom"
+            app:textStyle="@integer/font_semi_bold"
+            />
+
+        <ImageView
+            android:id="@+id/tuto_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/tuto2" />
+    </LinearLayout>
+
+</RelativeLayout>

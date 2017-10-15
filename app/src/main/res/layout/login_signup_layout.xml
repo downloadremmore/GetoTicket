@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradian_purple"
+    tools:context=".UI.Activity.MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dip"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:weightSum="1">
+        <com.example.rim.Geto_Ticket.UI.CustomFontTextView
+            android:id="@+id/login_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/splash_textview_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_signup_textsize"
+            android:text="@string/login_text"
+            app:font="@string/font_name_custom"
+            app:textStyle="@integer/font_thin"/>
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
+        <com.example.rim.Geto_Ticket.UI.CustomFontTextView
+            android:id="@+id/signup_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/splash_textview_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_signup_textsize"
+            android:text="@string/signup_text"
+            app:font="@string/font_name_custom"
+            app:textStyle="@integer/font_thin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

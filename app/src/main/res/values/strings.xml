@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Geto Ticket</string>
+    <string name="display_name">Name</string>
+    <string name="mail">Mail</string>
+    <string name="tuto0_text">Take a look around and check out all the events you can attend</string>
+    <string name="tuto1_text">Interested in an event? book your ticket and get your pass right away!</string>
+    <string name="tuto2_text">Show your Ticket to a staff member to scan it and you\'re good to go!</string>
+    <string name="text_next">Next</string>
+    <string name="text_skip">Skip</string>
+
+    <string name="splash_text">GetoTicket</string>
+    <string name="login_text">login</string>
+    <string name="signup_text">Sign up</string>
+    <string name="username_text">Username</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="phone_text">Phone number</string>
+
+    <string name="font_name_custom">FontCustom</string>
+    <string name="loading">loading...</string>
+
+    <!-- item event-->
+    <string name="item_title">event title</string>
+    <string name="item_desc">event description</string>
+    <string name="seats_num">Seats</string>
+    <string name="getticket_text">Generate Ticket</string>
+    <string name="title_event">EventName</string>
+    <string name="time_event">Date</string>
+    <string name="description_event">Description</string>
+    <string name="menu_logout">Log out</string>
+    <string name="menu_staff">Login as staff</string>
+    <string name="qr_warning_msg">*This ticket will be reserved for 48 hours until you Pay for it</string>
+
+    <!--qr_scanner-->
+    <string name="title_activity_scan_qr_code">Scan it</string>
+    <string name="qr_code_camera_not_open">Your camera function does not seem to open</string>
+    <string name="qr_code_camera_not_found">No camera detected</string>
+    <string name="qr_code_notification">Result Scan</string>
+    <string name="qr_code_positive_button_know">Got it</string>
+    <string name="qr_code_positive_button_confirm">ok</string>
+    <string name="qr_code_could_not_read_qr_code_from_scanner">Sorry, you can not open the content</string>
+    <string name="qc_code_close">Close</string>
+    <string name="qr_code_could_not_read_qr_code_from_picture">Did not read the picture in the link, try to picture it</string>
+
+</resources>

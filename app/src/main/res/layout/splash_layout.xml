@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradian_purple">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dip"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="@dimen/splash_imageview_width"
+            android:layout_height="@dimen/event_cover_image_height"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="0.24" />
+        <com.example.rim.Geto_Ticket.UI.CustomFontTextView
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/splash_textview_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/splash_textview_textsize"
+            android:text="@string/splash_text"
+            app:font="@string/font_name_custom"
+            app:textStyle="@integer/font_semi_bold"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

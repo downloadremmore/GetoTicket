@@ -1,0 +1,4 @@
+<resources>
+    <integer name="font_semi_bold">1</integer>
+    <integer name="font_thin">2</integer>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/featured_cover_image_height"
+            android:clickable="true"
+            android:onClick="changeCover"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@id/dim_image_bk"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/featured_cover_image_height"
+            android:background="@drawable/gradian_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_8"
+            android:layout_marginTop="@dimen/padding_10"
+            android:shadowColor="@color/main_txt_color"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="cc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_15" />
+
+        <TextView
+            android:id="@+id/cover_camera"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center|right|top"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_4"
+            android:background="@drawable/camera_bk"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="changeCover"
+            android:padding="3.0dip"
+            android:text="icon_picture"
+            android:textColor="@color/dark_gray"
+            android:textSize="20.0sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="changeImage">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="@dimen/event_card_user_size"
+                android:layout_height="@dimen/event_card_user_size"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_profile" />
+
+            <TextView
+                android:id="@+id/camera"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="bottom|center|right"
+                android:background="@drawable/camera_bk"
+                android:gravity="center"
+                android:padding="3.0dip"
+                android:textColor="@color/dark_gray"
+                android:textSize="20.0sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_10"
+            android:text="@string/display_name"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/font_15" />
+
+        <EditText
+            android:id="@+id/display_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="right"
+            android:inputType="textPersonName|textCapWords"
+            android:lines="1"
+            android:textColor="@color/dark_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dip"
+        android:background="@color/white"
+        android:padding="@dimen/padding_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_10"
+            android:text="@string/mail"
+            android:textColor="@color/main_txt_color"
+            android:textSize="@dimen/font_15" />
+
+        <EditText
+            android:id="@+id/user_mail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:inputType="text"
+            android:lines="1"
+            android:textColor="@color/dark_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_15" />
+
+    </LinearLayout>
+</LinearLayout>

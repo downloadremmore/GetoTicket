@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f2868</color>
+    <color name="colorPrimaryDark">#593993</color>
+    <color name="colorAccent">#fcd700</color>
+    <color name="Red">#fd4e50</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_body">#ffe5e5e5</color>
+    <color name="main_txt_color">#ff202020</color>
+    <color name="dark_gray">#ff999999</color>
+    <color name="yellow">#fcd700</color>
+    <color name="dark_grey">#AEAEAE</color>
+
+    <color name="qr_code_finder_mask">#80000000</color>
+    <color name="qr_code_flash_light_text_color">#66FFFFFF</color>
+    <color name="qr_code_finder_frame">#FFFFFFFF</color>
+    <color name="qr_code_finder_laser">#ef8394</color>
+</resources>

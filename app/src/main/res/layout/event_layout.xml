@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/event_cover_image_height"
+    android:paddingBottom="@dimen/padding_6"
+    android:paddingLeft="@dimen/padding_6"
+    android:paddingRight="@dimen/padding_6">
+
+    <ImageView
+        android:id="@+id/event_imageciew"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/event_cover_image_height"
+        android:scaleType="matrix" />
+
+    <View
+        android:id="@+id/dim_image_bk"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gradian_black" />
+
+    <ImageView
+        android:id="@+id/host_imageview"
+        android:layout_width="@dimen/event_image_width"
+        android:layout_height="@dimen/event_image_width"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/padding_8"
+        android:background="@drawable/event_rounded_border"
+        android:scaleType="matrix" />
+
+    <TextView
+        android:id="@+id/event_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/host_imageview"
+        android:layout_gravity="left"
+        android:layout_marginRight="@dimen/padding_8"
+        android:layout_toRightOf="@id/host_imageview"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="1"
+        android:shadowColor="@color/main_txt_color"
+        android:shadowDx="0.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        android:text="event_name"/>
+
+    <TextView
+        android:id="@+id/event_location_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/host_imageview"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_8"
+        android:layout_toRightOf="@id/host_imageview"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="1"
+        android:shadowColor="@color/main_txt_color"
+        android:shadowDx="0.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_14"
+        android:text="event_location"/>
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradian_purple"
+    tools:context=".UI.Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dip"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <com.example.rim.Geto_Ticket.UI.CustomFontEditText
+            android:id="@+id/username_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/splash_textview_margin"
+            android:background="@android:color/transparent"
+            android:hint="@string/username_text"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/signup_textsize"
+            app:font="@string/font_name_custom"
+            app:textStyle="@integer/font_thin" />
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <com.example.rim.Geto_Ticket.UI.CustomFontEditText
+            android:id="@+id/email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/splash_textview_margin"
+            android:background="@android:color/transparent"
+            android:hint="@string/email_text"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/signup_textsize"
+            app:font="@string/font_name_custom"
+            app:textStyle="@integer/font_thin" />
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <com.example.rim.Geto_Ticket.UI.CustomFontEditText
+            android:id="@+id/pass_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/splash_textview_margin"
+            android:background="@android:color/transparent"
+            android:hint="@string/password_text"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/signup_textsize"
+            app:font="@string/font_name_custom"
+            app:textStyle="@integer/font_thin" />
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <com.example.rim.Geto_Ticket.UI.CustomFontEditText
+            android:id="@+id/num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/splash_textview_margin"
+            android:background="@android:color/transparent"
+            android:hint="@string/phone_text"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/signup_textsize"
+            app:font="@string/font_name_custom"
+            app:textStyle="@integer/font_thin" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/tuto_marginbuttom"
+            android:layout_marginLeft="@dimen/tuto_marginleft"
+            android:src="@drawable/ic_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tuto_textsize" />
+
+        <ImageView
+            android:id="@+id/signup_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/tuto_marginbuttom"
+            android:layout_marginRight="@dimen/tuto_marginleft"
+            android:src="@drawable/ic_next"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/tuto_textsize" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/connect_fb_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tuto_textsize" />
+
+            <ImageView
+                android:id="@+id/connect_google_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/google_plus"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tuto_textsize" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
